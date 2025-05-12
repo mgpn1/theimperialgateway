@@ -13,6 +13,5 @@ export default defineConfig({
         main: './index.html'
       }
     }
-  },
-  publicDir: 'images_m'
+  }
 });

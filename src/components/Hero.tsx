@@ -1,5 +1,4 @@
 import React from 'react';
-import heroImage from '../../images_m/hero.jpg';
 
 const Hero: React.FC = () => {
   return (
@@ -7,7 +6,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-black/30 z-10"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: "url('/images_m/hero.jpg')" }}
       ></div>
       
       <div className="container mx-auto px-4 h-full relative z-20 flex flex-col justify-center">

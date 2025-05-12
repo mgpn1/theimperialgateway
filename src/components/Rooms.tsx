@@ -1,8 +1,8 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-import roomKing from '../../images_m/room_king.jpg';
-import roomDouble from '../../images_m/room_double.jpg';
-import roomSuite from '../../images_m/room_suite.jpg';
+import roomKing from '/images_m/room_king.jpg';
+import roomDouble from '/images_m/room_double.jpg';
+import roomSuite from '/images_m/room_suite.jpg';
 
 type RoomType = {
   id: number;
