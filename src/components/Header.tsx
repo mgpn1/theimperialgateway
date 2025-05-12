@@ -28,29 +28,29 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#" className="text-blue-900 font-bold text-2xl">
+            <a href="#" className="text-white font-bold text-2xl">
               THE IMPERIAL GATEWAY
             </a>
-            <span className="hidden md:block ml-2 text-sm text-gray-600">
+            <span className="hidden md:block ml-2 text-sm text-gray-200">
               New Delhi
             </span>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#rooms" className="text-gray-800 hover:text-blue-600 font-medium transition-colors duration-200">
+            <a href="#rooms" className="text-white hover:text-blue-200 font-medium transition-colors duration-200">
               Rooms
             </a>
-            <a href="#amenities" className="text-gray-800 hover:text-blue-600 font-medium transition-colors duration-200">
+            <a href="#amenities" className="text-white hover:text-blue-200 font-medium transition-colors duration-200">
               Amenities
             </a>
-            <a href="#location" className="text-gray-800 hover:text-blue-600 font-medium transition-colors duration-200">
+            <a href="#location" className="text-white hover:text-blue-200 font-medium transition-colors duration-200">
               Location
             </a>
-            <a href="#gallery" className="text-gray-800 hover:text-blue-600 font-medium transition-colors duration-200">
+            <a href="#gallery" className="text-white hover:text-blue-200 font-medium transition-colors duration-200">
               Gallery
             </a>
-            <a href="#offers" className="text-gray-800 hover:text-blue-600 font-medium transition-colors duration-200">
+            <a href="#offers" className="text-white hover:text-blue-200 font-medium transition-colors duration-200">
               Special Offers
             </a>
             <div className="relative group">
