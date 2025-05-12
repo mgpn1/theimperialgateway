@@ -55,7 +55,7 @@ const galleryImages: GalleryImageType[] = [
     id: 8,
     src: "https://images.pexels.com/photos/2134224/pexels-photo-2134224.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     alt: "Lobby",
-    category: 'interior'
+    category: 'amenities'
   },
 ];
 
