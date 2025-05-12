@@ -1,5 +1,8 @@
 import React from 'react';
 import { Check } from 'lucide-react';
+import roomKing from '../../images_m/room_king.jpg';
+import roomDouble from '../../images_m/room_double.jpg';
+import roomSuite from '../../images_m/room_suite.jpg';
 
 type RoomType = {
   id: number;
@@ -15,7 +18,7 @@ const roomData: RoomType[] = [
     id: 1,
     name: "King Bed Room",
     description: "Elegant room with a king-size bed, featuring panoramic views of Delhi's skyline and luxurious amenities.",
-    image: "/theimperialgateway/images_m/room_king.jpg",
+    image: roomKing,
     features: ["High-Speed Wi-Fi", "55\" Smart HDTV", "Luxury Linens", "Executive Work Desk", "Minibar", "City View"],
     price: "₹12,900",
   },
@@ -23,7 +26,7 @@ const roomData: RoomType[] = [
     id: 2,
     name: "Two Queen Beds Room",
     description: "Luxurious room with two queen beds, perfect for families or groups. Features a private balcony with city views.",
-    image: "/theimperialgateway/images_m/room_double.jpg",
+    image: roomDouble,
     features: ["High-Speed Wi-Fi", "55\" Smart HDTV", "Luxury Linens", "Executive Work Desk", "Minibar", "Private Balcony", "City View"],
     price: "₹14,900",
   },
@@ -31,7 +34,7 @@ const roomData: RoomType[] = [
     id: 3,
     name: "King Suite",
     description: "Luxury suite with separate living room and bedroom featuring a king-size bed. Includes a private balcony with panoramic city views.",
-    image: "/theimperialgateway/images_m/room_suite.jpg",
+    image: roomSuite,
     features: ["High-Speed Wi-Fi", "55\" Smart HDTV", "Luxury Linens", "Executive Work Desk", "Minibar", "Private Balcony", "City View", "Butler Service"],
     price: "₹18,900",
   },
