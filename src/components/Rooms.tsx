@@ -1,8 +1,5 @@
 import React from 'react';
 import { Check } from 'lucide-react';
-import roomKing from '/images_m/room_king.jpg';
-import roomDouble from '/images_m/room_double.jpg';
-import roomSuite from '/images_m/room_suite.jpg';
 
 type RoomType = {
   id: number;
@@ -13,34 +10,37 @@ type RoomType = {
   price: string;
 };
 
-const roomData: RoomType[] = [
-  {
-    id: 1,
-    name: "King Bed Room",
-    description: "Elegant room with a king-size bed, featuring panoramic views of Delhi's skyline and luxurious amenities.",
-    image: "/theimperialgateway/images_m/room_king.jpg",
-    features: ["High-Speed Wi-Fi", "55\" Smart HDTV", "Luxury Linens", "Executive Work Desk", "Minibar", "City View"],
-    price: "₹12,900",
-  },
-  {
-    id: 2,
-    name: "Two Queen Beds Room",
-    description: "Luxurious room with two queen beds, perfect for families or groups. Features a private balcony with city views.",
-    image: "/theimperialgateway/images_m/room_double.jpg",
-    features: ["High-Speed Wi-Fi", "55\" Smart HDTV", "Luxury Linens", "Executive Work Desk", "Minibar", "Private Balcony", "City View"],
-    price: "₹14,900",
-  },
-  {
-    id: 3,
-    name: "King Suite",
-    description: "Luxury suite with separate living room and bedroom featuring a king-size bed. Includes a private balcony with panoramic city views.",
-    image: "/theimperialgateway/images_m/room_suite.jpg",
-    features: ["High-Speed Wi-Fi", "55\" Smart HDTV", "Luxury Linens", "Executive Work Desk", "Minibar", "Private Balcony", "City View", "Butler Service"],
-    price: "₹18,900",
-  },
-];
-
 const Rooms: React.FC = () => {
+  // Get the base path from the current URL
+  const basePath = window.location.hostname === 'localhost' ? '' : '/theimperialgateway';
+
+  const roomData: RoomType[] = [
+    {
+      id: 1,
+      name: "King Bed Room",
+      description: "Elegant room with a king-size bed, featuring panoramic views of Delhi's skyline and luxurious amenities.",
+      image: `${basePath}/images_m/room_king.jpg`,
+      features: ["High-Speed Wi-Fi", "55\" Smart HDTV", "Luxury Linens", "Executive Work Desk", "Minibar", "City View"],
+      price: "₹12,900",
+    },
+    {
+      id: 2,
+      name: "Two Queen Beds Room",
+      description: "Luxurious room with two queen beds, perfect for families or groups. Features a private balcony with city views.",
+      image: `${basePath}/images_m/room_double.jpg`,
+      features: ["High-Speed Wi-Fi", "55\" Smart HDTV", "Luxury Linens", "Executive Work Desk", "Minibar", "Private Balcony", "City View"],
+      price: "₹14,900",
+    },
+    {
+      id: 3,
+      name: "King Suite",
+      description: "Luxury suite with separate living room and bedroom featuring a king-size bed. Includes a private balcony with panoramic city views.",
+      image: `${basePath}/images_m/room_suite.jpg`,
+      features: ["High-Speed Wi-Fi", "55\" Smart HDTV", "Luxury Linens", "Executive Work Desk", "Minibar", "Private Balcony", "City View", "Butler Service"],
+      price: "₹18,900",
+    },
+  ];
+
   return (
     <section id="rooms" className="py-16 bg-white">
       <div className="container mx-auto px-4">

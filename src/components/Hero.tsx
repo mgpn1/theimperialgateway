@@ -1,12 +1,15 @@
 import React from 'react';
 
 const Hero: React.FC = () => {
+  // Get the base path from the current URL
+  const basePath = window.location.hostname === 'localhost' ? '' : '/theimperialgateway';
+  
   return (
     <section className="pt-20 relative h-[80vh] min-h-[600px]">
       <div className="absolute inset-0 bg-black/50 z-10"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/theimperialgateway/images_m/hero.jpg')" }}
+        style={{ backgroundImage: `url(${basePath}/images_m/hero.jpg)` }}
       ></div>
       
       <div className="container mx-auto px-4 h-full relative z-20 flex flex-col justify-center">
